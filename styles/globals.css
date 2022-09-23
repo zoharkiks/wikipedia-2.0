@@ -4,12 +4,27 @@
 
 
 /* For Custom fonts */
-/* @font-face {
-    font-family: "WorldwideHeadline";
-    src: url("../public/fonts/WorldwideHeadline.ttf");
-  } */
+@font-face {
+    font-family: "Calibri-Regular";
+    src: url("../public/fonts/calibri-regular.ttf");
+  }
 
-/* @font-face {
-    font-family: "WorldwideHeadline";
-    src: url("../public/fonts/WorldwideHeadline.ttf");
-  } */
+@font-face {
+    font-family: "Calibri-Bold";
+    src: url("../public/fonts/calibri-bold.ttf");
+  }
+
+  @font-face {
+    font-family: "Linux-Regular";
+    src: url("../public/fonts/LinLibertine_R.otf");
+  }
+
+  @font-face {
+    font-family: "Linux-Semibold";
+    src: url("../public/fonts/LinLibertine_RZ.otf");
+  }
+
+  @font-face {
+    font-family: "Linux-Bold";
+    src: url("../public/fonts/LinLibertine_RB.otf");
+  }

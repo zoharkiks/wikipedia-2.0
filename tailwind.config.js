@@ -12,12 +12,15 @@ module.exports = {
     //   'black':'#000000',
     // },
     extend: {
-      // Using custom fonts
-      // fontFamily: {
-      //   worldwide: ["WorldwideHeadline", "cursive"],
-      //   blooming: ["Blooming Elegant Sans", "cursive"],
-      //   poppins: ["Poppins", 'sans-serif']
-      // },
+      fontFamily: {
+        calibri: ["Calibri-Regular", "sans"],
+        calibriBold: ["Calibri-Bold", "sans"],
+        linux: ["Linux-Regular", "sans"],
+        linuxSemibold: ["Linux-Semibold", "sans"],
+        linuxBold: ["Linux-Bold", "sans"],
+     
+       
+      },
     },
   },
   plugins: [],

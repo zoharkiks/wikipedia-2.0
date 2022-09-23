@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <div >
       <Head>
-        <title>Your App Name</title>
+        <title>Wikipedia 2.0</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
