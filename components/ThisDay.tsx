@@ -13,7 +13,7 @@ const ThisDay = () => {
         />
       </div>
 
-{/* TODO Add Blurred Background */}
+      {/* TODO Add Blurred Background */}
       <div className="flex flex-col justify-between font-calibri md:mt-4 ">
         <div className="">
           <h2 className="text-xl  md:mt-4">King of Kings</h2>
@@ -22,35 +22,30 @@ const ThisDay = () => {
           </span>
         </div>
 
-        <ul className="list-disc px-4 my-4  overflow-y-hidden h-[10rem] md:h-[16rem] ">
-        <li className="mb-3">
-          <span className="font-calibriBold text-black ">1865</span> - <span className="text-gray-500">Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur odio
-          perspiciatis dolorem, quis dolore eum dolor explicabo itaque quidem.
-          Aperiam rem autem nobis accusamus repellendus nihil ab totam
-          temporibus?</span> 
-        </li>
+        <ul className="my-4 h-[10rem] list-disc  overflow-y-hidden px-4 md:h-[16rem] ">
+          <li className="mb-3">
+            <span className="font-calibriBold text-black ">1865</span> -{" "}
+            <span className="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              pariatur odio perspiciatis dolorem, quis dolore eum dolor
+              explicabo itaque quidem. Aperiam rem autem nobis accusamus
+              repellendus nihil ab totam temporibus?
+            </span>
+          </li>
 
-        <li className="">
-          <span className="font-calibriBold text-black ">1865</span> - <span className="text-gray-500">Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur odio
-          perspiciatis dolorem, quis dolore eum dolor explicabo itaque quidem.
-          Aperiam rem autem nobis accusamus repellendus nihil ab totam
-          temporibus?</span> 
-        </li>
+          <li className="">
+            <span className="font-calibriBold text-black ">1865</span> -{" "}
+            <span className="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              pariatur odio perspiciatis dolorem, quis dolore eum dolor
+              explicabo itaque quidem. Aperiam rem autem nobis accusamus
+              repellendus nihil ab totam temporibus?
+            </span>
+          </li>
+        </ul>
 
-      </ul>
-
-
-<Button style=""/> 
-
-
-
-
+        <Button />
       </div>
-
-    
-
     </div>
   );
 };

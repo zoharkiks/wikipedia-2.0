@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { FeaturedPicture, ThisDay } from "../components";
+import { FeaturedArticle, FeaturedPicture, ThisDay } from "../components";
 
 const Hero = () => {
   return (
@@ -24,9 +24,17 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 mt-20 md:grid-cols-2 gap-4 max-w-7xl md:mx-auto ">
-        <FeaturedPicture />
-        <ThisDay/>
+      <div className="mt-20 grid max-w-7xl grid-cols-1 gap-4 md:mx-auto md:grid-cols-2 ">
+        <section>
+          <FeaturedPicture />
+        </section>
+        <section>
+          <ThisDay />
+        </section>
+
+        <section className="md:col-span-2 mt-10 md:mt-20">
+          <FeaturedArticle/>
+        </section>
       </div>
     </div>
   );

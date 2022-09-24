@@ -4,5 +4,7 @@ import  Navbar  from "./Navbar"
 import  FeaturedPicture  from "./FeaturedPicture"
 import  Button  from "./Button"
 import  ThisDay  from "./ThisDay"
+import  FeaturedArticle  from "./FeaturedArticle"
+import  Category  from "./Category"
 
-export {Navbar,FeaturedPicture,Button,ThisDay}
+export {Navbar,FeaturedPicture,Button,ThisDay,FeaturedArticle,Category}
