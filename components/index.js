@@ -3,5 +3,6 @@
 import  Navbar  from "./Navbar"
 import  FeaturedPicture  from "./FeaturedPicture"
 import  Button  from "./Button"
+import  ThisDay  from "./ThisDay"
 
-export {Navbar,FeaturedPicture,Button}
+export {Navbar,FeaturedPicture,Button,ThisDay}
