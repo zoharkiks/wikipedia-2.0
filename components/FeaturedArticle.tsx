@@ -4,7 +4,7 @@ import Category from "./Category";
 
 const FeaturedArticle = () => {
   return (
-    <div className="grid grid-cols-1   md:gap-10 border-y py-4 md:grid-cols-3 md:py-8 ">
+    <div className="grid grid-cols-1   md:gap-10   md:grid-cols-3 md:py-8 ">
 
 <h1 className=" font-calibri text-3xl md:hidden ">
           From Today's Featured Article

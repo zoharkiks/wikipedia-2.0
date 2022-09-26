@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="mt-20 grid max-w-7xl grid-cols-1 gap-4 md:mx-auto md:grid-cols-2 ">
+      <div className="mt-20 grid max-w-[1440px] grid-cols-1 gap-4 md:mx-auto md:grid-cols-2 ">
         <section>
           <FeaturedPicture />
         </section>
@@ -32,11 +32,11 @@ const Hero = () => {
           <ThisDay />
         </section>
 
-        <section className="md:col-span-2 mt-10 md:mt-20">
+        <section className="md:col-span-2  mt-10 md:mt-14 border-t">
           <FeaturedArticle/>
         </section>
 
-        <section className="md:col-span-2 my-6">
+        <section className="md:col-span-2 mt-10 md:mt-14  border-t py-10 ">
           <DidYouKnow/>
         </section>
 

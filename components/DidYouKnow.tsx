@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const DidYouKnow = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10"
+    <div className="grid grid-cols-1 md:grid-cols-3  md:gap-10"
     >
       
         <img
