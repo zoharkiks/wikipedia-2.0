@@ -1,10 +1,10 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { FeaturedArticle, FeaturedPicture, ThisDay } from "../components";
+import { DidYouKnow, FeaturedArticle, FeaturedPicture, PopularCategories, ThisDay } from "../components";
 
 const Hero = () => {
   return (
-    <div className="  border-t px-4 pt-16">
+    <div className="  border-t px-4 pt-16 ">
       <div className="flex  flex-col items-center">
         <h1 className="w-[21rem]  text-center font-linux text-4xl leading-[3rem]">
           World's Biggest Source Of Knowledge{" "}
@@ -34,6 +34,14 @@ const Hero = () => {
 
         <section className="md:col-span-2 mt-10 md:mt-20">
           <FeaturedArticle/>
+        </section>
+
+        <section className="md:col-span-2 my-6">
+          <DidYouKnow/>
+        </section>
+
+        <section>
+          <PopularCategories/>
         </section>
       </div>
     </div>

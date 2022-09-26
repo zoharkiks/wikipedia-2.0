@@ -22,7 +22,7 @@ const ThisDay = () => {
           </span>
         </div>
 
-        <ul className="my-4 h-[10rem] list-disc  overflow-y-hidden px-4 md:h-[16rem] ">
+        <ul className="my-4 h-[10rem] list-disc  overflow-y-hidden px-5 md:h-[16rem] ">
           <li className="mb-3">
             <span className="font-calibriBold text-black ">1865</span> -{" "}
             <span className="text-gray-500">
