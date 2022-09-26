@@ -8,7 +8,7 @@ import { Navbar } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div className="pb-10">
+    <div className="pb-4">
       <Head>
         <title>Wikipedia 2.0</title>
         <link rel="icon" href="/favicon.ico" />

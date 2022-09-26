@@ -28,7 +28,7 @@ const Hero = () => {
         <section>
           <FeaturedPicture />
         </section>
-        <section>
+        <section className="mt-10 md:mt-0">
           <ThisDay />
         </section>
 
@@ -40,7 +40,7 @@ const Hero = () => {
           <DidYouKnow/>
         </section>
 
-        <section>
+        <section className="md:col-span-2 mt-16 md:mt-20">
           <PopularCategories/>
         </section>
       </div>

@@ -4,32 +4,37 @@ import Category from "./Category";
 
 const FeaturedArticle = () => {
   return (
-    <div className="grid grid-cols-1   md:gap-10   md:grid-cols-3 md:py-8 ">
+    <div className="grid grid-cols-1   md:grid-cols-3   md:gap-10 py-8 ">
+      <h1 className=" font-calibri text-3xl md:hidden ">
+        From Today's Featured Article
+      </h1>
 
-<h1 className=" font-calibri text-3xl md:hidden ">
-          From Today's Featured Article
-        </h1>
-
-      <div className="flex justify-center  h-full mt-8 md:mt-0 ">
+      <div className="mt-8 flex  h-full justify-center md:mt-0 ">
         <img
           src="https://www.tripsavvy.com/thmb/QZUBiTCTl2BvMAAla9vmUBqQEAk=/2120x1414/filters:fill(auto,1)/GettyImages-618355052-b865a78b33cf412b915909ad9d941f27.jpg"
           alt="featured-image"
-          className="h-[28rem] md:h-full  object-cover "
+          className="h-[28rem] object-cover  md:h-full "
         />
       </div>
 
-      <div className="flex flex-col justify-evenly md:col-span-2 md:w-[85%] sp  ">
-        <h1 className=" font-calibri text-3xl hidden md:inline-flex">
+      <div className="sp flex flex-col justify-evenly md:col-span-2 md:w-[85%]  ">
+        <h1 className=" hidden font-calibri text-3xl md:inline-flex">
           From Today's Featured Article
         </h1>
 
-        <div className="flex justify-center space-x-4 md:justify-start my-4 ">
-          <Category category="Music" />
-          <Category category="Music" />
-          <Category category="Music" />
+        <div className="my-4 flex justify-center space-x-4 md:justify-start ">
+          <div className="justif flex rounded-full border p-2 text-sm text-gray-500 md:text-xs">
+            Music
+          </div>
+          <div className="justif flex rounded-full border p-2 text-sm text-gray-500 md:text-xs">
+            Music
+          </div>
+          <div className="justif flex rounded-full border p-2 text-sm text-gray-500 md:text-xs">
+            Music
+          </div>
         </div>
 
-        <p className=" h-[10rem] overflow-y-hidden my-4 text-gray-500 md:h-[20rem] ">
+        <p className=" my-4 h-[10rem] overflow-y-hidden text-gray-500 md:h-[20rem] ">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
           similique fuga dolore voluptas sapiente, quibusdam debitis
           voluptatibus eligendi cum autem! Eius, adipisci sit. Repudiandae
