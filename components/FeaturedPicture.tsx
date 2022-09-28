@@ -1,8 +1,13 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Button from "./Button";
+import Image from 'next/future/image'
 
 const FeaturedPicture = () => {
 
+const featured = useSelector((state)=>state.featured.featured.image)
+
+console.log(featured);
 
   
   return (
@@ -11,29 +16,31 @@ const FeaturedPicture = () => {
         <h2 className=" font-calibri text-gray-500 ">
           Today's Featured Picture
         </h2>
-        <img
-          className="mt-4 h-[22rem]  w-full object-cover  "
-          src="https://cdnb.artstation.com/p/assets/images/images/002/536/295/large/camille-kuo-oldking-camillekuo.jpg?1462869162"
+        {/* TODO-ADD blurred placeholder */}
+        <Image
+       className="h-full object-cover my-3 w-full"
+       placeholder="empty"
+          width="450"
+          height='500'
+          src={featured?.image?.source} 
           alt="featured-picture"
         />
       </div>
 
-      <div className="md:mt-4 flex flex-col justify-between font-calibri">
+      <div className="md:mt-4 flex flex-col justify-between font-calibri h-full mt-4  md:mt-0">
         <div className="">
-          <h2 className="text-xl  md:mt-4">King of Kings</h2>
+          <h2 className="text-xl  md:mt-4">{featured?.structured?.captions?.en}</h2>
           <span className="text-sm text-gray-500">
-            (July 30, 1889 - June 30,1900)
+          {featured?.artist?.text}
+
           </span>
         </div>
 
         <p className="mt-4 mb-4 text-gray-500 md:mb-16">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
-          similique fuga dolore voluptas sapiente, quibusdam debitis
-          voluptatibus eligendi cum autem! Eius, adipisci sit. Repudiandae
-          dolore error minus, iste beatae quia?
+        {featured?.description?.text}
+
         </p>
 
-        <Button />
       </div>
     </div>
   );
