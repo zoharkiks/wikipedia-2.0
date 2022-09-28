@@ -2,6 +2,9 @@ import React from "react";
 import Button from "./Button";
 
 const FeaturedPicture = () => {
+
+
+  
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
       <div>
