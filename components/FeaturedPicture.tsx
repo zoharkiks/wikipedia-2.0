@@ -26,7 +26,7 @@ const featuredImage = useSelector((state)=>state.featured.featured.image)
         />
       </div>
 
-      <div className="md:mt-4 flex flex-col justify-between font-calibri h-full mt-4  md:mt-0">
+      <div className=" flex flex-col justify-between font-calibri h-full mt-4  ">
         <div className="">
           <h2 className="text-xl  md:mt-4">{featuredImage?.structured?.captions?.en}</h2>
           <span className="text-sm text-gray-500">

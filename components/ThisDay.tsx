@@ -1,7 +1,18 @@
 import React from "react";
 import Button from "./Button";
+import { useSelector } from "react-redux";
+import Image from "next/future/image";
+import { useRouter } from "next/router";
 
 const ThisDay = () => {
+  const featuredOnThisDay = useSelector(
+    (state) => state.featured.featured.onthisday
+  );
+
+  const router = useRouter()
+
+  console.log(featuredOnThisDay);
+
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2  ">
       <div>
@@ -22,29 +33,18 @@ const ThisDay = () => {
           </span>
         </div>
 
-        <ul className="my-4 h-[10rem] list-disc  overflow-y-hidden px-5 md:h-[16rem] ">
-          <li className="mb-3">
-            <span className="font-calibriBold text-black ">1865</span> -{" "}
-            <span className="text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              pariatur odio perspiciatis dolorem, quis dolore eum dolor
-              explicabo itaque quidem. Aperiam rem autem nobis accusamus
-              repellendus nihil ab totam temporibus?
-            </span>
-          </li>
-
-          <li className="">
-            <span className="font-calibriBold text-black ">1865</span> -{" "}
-            <span className="text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              pariatur odio perspiciatis dolorem, quis dolore eum dolor
-              explicabo itaque quidem. Aperiam rem autem nobis accusamus
-              repellendus nihil ab totam temporibus?
-            </span>
-          </li>
+        <ul className="my-4 h-[10rem] list-disc  overflow-y-auto px-5 md:h-[16rem] ">
+          {featuredOnThisDay?.map((date) => (
+            <a target='blank' href={date.pages[0].content_urls.desktop.page}>
+ <li  className="mb-3 ">
+              <span className="font-calibriBold text-black ">{date.year}</span>{" "}
+              - <span className="text-gray-500">{date.text}</span>
+            </li>
+            </a>
+           
+          ))}
         </ul>
 
-        <Button />
       </div>
     </div>
   );
