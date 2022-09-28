@@ -5,9 +5,8 @@ import Image from 'next/future/image'
 
 const FeaturedPicture = () => {
 
-const featured = useSelector((state)=>state.featured.featured.image)
+const featuredImage = useSelector((state)=>state.featured.featured.image)
 
-console.log(featured);
 
   
   return (
@@ -22,22 +21,22 @@ console.log(featured);
        placeholder="empty"
           width="450"
           height='500'
-          src={featured?.image?.source} 
-          alt="featured-picture"
+          src={featuredImage?.image?.source} 
+          alt="featuredImage-picture"
         />
       </div>
 
       <div className="md:mt-4 flex flex-col justify-between font-calibri h-full mt-4  md:mt-0">
         <div className="">
-          <h2 className="text-xl  md:mt-4">{featured?.structured?.captions?.en}</h2>
+          <h2 className="text-xl  md:mt-4">{featuredImage?.structured?.captions?.en}</h2>
           <span className="text-sm text-gray-500">
-          {featured?.artist?.text}
+          {featuredImage?.artist?.text}
 
           </span>
         </div>
 
         <p className="mt-4 mb-4 text-gray-500 md:mb-16">
-        {featured?.description?.text}
+        {featuredImage?.description?.text}
 
         </p>
 
