@@ -8,6 +8,8 @@ const FeaturedPicture = () => {
 const featuredImage = useSelector((state)=>state.featured.featured.image)
 
 
+
+
   
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
