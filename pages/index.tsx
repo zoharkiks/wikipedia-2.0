@@ -7,7 +7,7 @@ import Head from "next/head";
 import { Footer, Hero } from "../containers";
 // import components
 import { Navbar } from "../components";
-import { getFeatured } from "../redux/featuredSlice";
+import { getFeatured, getTopArticles } from "../redux/featuredSlice";
 
 const Home: NextPage = () => {
 
@@ -16,9 +16,11 @@ const Home: NextPage = () => {
 // Get Featured data
 useEffect(() => {
   dispatch(getFeatured())
+  dispatch(getTopArticles())
 
 },[]
 )
+
 
 
   return (

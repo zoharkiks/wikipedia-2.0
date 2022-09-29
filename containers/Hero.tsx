@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { DidYouKnow, FeaturedArticle, FeaturedPicture, PopularCategories, ThisDay } from "../components";
+import { TopArticles, FeaturedArticle, FeaturedPicture, PopularCategories, ThisDay } from "../components";
 
 const Hero = () => {
   return (
@@ -37,12 +37,12 @@ const Hero = () => {
         </section>
 
         <section className="md:col-span-2 mt-10 md:mt-14  border-t py-10 ">
-          <DidYouKnow/>
+          <TopArticles/>
         </section>
-
-        <section className="md:col-span-2 mt-16 md:mt-20">
+{/* 
+        <section className="md:col-span-2 mt-10 md:mt-14">
           <PopularCategories/>
-        </section>
+        </section> */}
       </div>
     </div>
   );

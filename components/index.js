@@ -7,7 +7,7 @@ import  ThisDay  from "./ThisDay"
 import  FeaturedArticle  from "./FeaturedArticle"
 import  Category  from "./Category"
 import  PopularCategories  from "./PopularCategories"
-import  DidYouKnow  from "./DidYouKnow"
+import  TopArticles  from "./TopArticles"
 
 
-export {Navbar,FeaturedPicture,Button,ThisDay,FeaturedArticle,Category,PopularCategories,DidYouKnow}
+export {Navbar,FeaturedPicture,Button,ThisDay,FeaturedArticle,Category,PopularCategories,TopArticles}
